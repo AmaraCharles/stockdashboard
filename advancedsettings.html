@@ -69,21 +69,78 @@
             </span>
         </button>
         <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
-        <div class="nav-toggle">
+       <div class="nav-toggle">
             <button class="btn btn-toggle toggle-sidebar">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </div>
     <!-- End Logo Header -->
+<style>
+    .blink_me {
+  animation: blinker 1s linear infinite;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid #1ee0ac;
+  background-color: #1ee0ac;
+  border-radius: 100%;
+}
+</style>
+<style>
+    .showstep1 {
+      animation: fadeIn 1.7s linear;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .showstep2 {
+      animation: fadeIn 1.7s linear;
+      animation-delay: 2.5s;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .showstep3 {
+      animation: fadeIn 1.7s linear;
+      animation-delay: 3.5s;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .showref {
+      animation: fadeIn 1.7s linear;
+      animation-delay: 4.5s;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
 
     <!-- Navbar Header -->
     <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
         
         <div class="container-fluid">
             <div class="text-center d-md-block d-none">
-                <a href="../index.htmldashboard/deposits" class="pricing-action btn btn-warning btn-sm">Fund your Account</a> &nbsp;
-                <a href="../index.htmldashboard/withdrawals" class="pricing-action btn btn-danger btn-sm">Withdraw Funds</a>
+                  <a href="./deposit.html" class="pricing-action btn btn-warning btn-sm">Fund your Account</a> &nbsp;
+                <a href="./withcheckout.html" class="pricing-action btn btn-danger btn-sm">Withdraw Funds</a>
+                <a href="./livetrade.html" class="pricing-action btn btn-success btn-sm">Status:<span id="stat">On Standby</span><span class="blink_me"></span> </a>
                 
             </div>
             <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
@@ -92,10 +149,7 @@
                     <form action="javascript:void(0)" method="post" id="styleform" class="form-inline">
                        
                         <div class="form-group">
-                            <label class="style_switch">
-                                <input name="style" id="style" type="checkbox" value="true" class="modes">
-                                <span class="slider round"></span>
-                            </label>
+                            
                         </div> 
                                                 <script>document.getElementById("style").checked= true;</script>
                                                 <input type="hidden" name="_token" value="ZI2HHDmgoAJUlh4wB5dyfaVH2BKSd81w9lbHLCph">
@@ -113,15 +167,15 @@
                                     
                                     <div class="u-text">
                                         <h4>testuser</h4>
-                                        <p class="text-muted">falsepegasus@gmail.com</p><a href="../index.htmldashboard/account-settings" class="btn btn-xs btn-secondary btn-sm">Account Settings</a>
+                                        <p class="text-muted">falsepegasus@gmail.com</p><a href="./settings.html" class="btn btn-xs btn-secondary btn-sm">Account Settings</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../index.htmldashboard/deposits">Deposit</a>
-                                <a class="dropdown-item" href="../index.htmldashboard/withdrawals">Withdraw</a>
-                                <a class="dropdown-item" href="../index.htmldashboard/buy-plan">Buy Plan</a>
+                                <a class="dropdown-item" href="./deposit.html">Deposit</a>
+                                <a class="dropdown-item" href="./withcheckout.html">Withdraw</a>
+                                <a class="dropdown-item" href="./pricing.html">Buy Plan</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../index.htmllogout" onclick="event.preventDefault();
                                     document.getElementById(&#39;logout-form&#39;).submit();">
@@ -176,7 +230,7 @@
                     <div class="collapse in" id="collapseExample">
                         <ul class="nav">
                             <li>
-                                <a href="../index.htmldashboard/account-settings">
+                                <a href="./settings.html">
                                     <span class="link-collapse">Account Settings</span>
                                 </a>
                             </li>
@@ -192,13 +246,13 @@
                     </a>
                 </li>
                 <li class="nav-item d-md-none  ">
-                    <a href="../index.htmldashboard/deposits">
+                    <a href="./deposit.html">
                         <i class="fa fa-download " aria-hidden="true"></i>
                         <p>Fund your Account</p>
                     </a>
                 </li>
                 <li class="nav-item d-md-none  ">
-                    <a href="../index.htmldashboard/withdrawals">
+                    <a href="./withcheckout.html">
                         <i class="fa fa-arrow-alt-circle-up " aria-hidden="true"></i>
                         <p>Withdraw Funds</p>
                     </a>
@@ -232,7 +286,7 @@
                     <div class="collapse" id="mpack">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="../index.htmldashboard/buy-plan">
+                                <a href="./pricing.html">
                                     <span class="sub-item">Subscribe to a Plan</span>
                                 </a>
                             </li>

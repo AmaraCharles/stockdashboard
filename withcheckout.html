@@ -66,13 +66,13 @@
         </a>
         <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
-                <i class="icon-menu"></i>
+               <i class="fa-solid fa-bars"></i>
             </span>
         </button>
         <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
         <div class="nav-toggle">
             <button class="btn btn-toggle toggle-sidebar">
-                <i class="icon-menu"></i>
+               <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </div>
@@ -83,8 +83,8 @@
         
         <div class="container-fluid">
             <div class="text-center d-md-block d-none">
-                <a href="../index.htmldashboard/deposits" class="pricing-action btn btn-warning btn-sm">Fund your Account</a> &nbsp;
-                <a href="../index.htmldashboard/withdrawals" class="pricing-action btn btn-danger btn-sm">Withdraw Funds</a>
+                <a href="./deposit.html" class="pricing-action btn btn-warning btn-sm">Fund your Account</a>
+                <a href="./withcheckout.html" class="pricing-action btn btn-danger btn-sm">Withdraw Funds</a>
                 
             </div>
             <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
@@ -93,10 +93,7 @@
                     <form action="javascript:void(0)" method="post" id="styleform" class="form-inline">
                        
                         <div class="form-group">
-                            <label class="style_switch">
-                                <input name="style" id="style" type="checkbox" value="true" class="modes">
-                                <span class="slider round"></span>
-                            </label>
+                            
                         </div> 
                                                 <script>document.getElementById("style").checked= true;</script>
                                                 <input type="hidden" name="_token" value="5FhwnCvCs05Y567wq8AEuGahbNN4JqxjjyhJ5rEk">
@@ -114,15 +111,15 @@
                                     
                                     <div class="u-text">
                                         <h4>testuser</h4>
-                                        <p class="text-muted">falsepegasus@gmail.com</p><a href="../index.htmldashboard/account-settings" class="btn btn-xs btn-secondary btn-sm">Account Settings</a>
+                                        <p class="text-muted">falsepegasus@gmail.com</p><a href="./settings.html" class="btn btn-xs btn-secondary btn-sm">Account Settings</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../index.htmldashboard/deposits">Deposit</a>
-                                <a class="dropdown-item" href="../index.htmldashboard/withdrawals">Withdraw</a>
-                                <a class="dropdown-item" href="../index.htmldashboard/buy-plan">Buy Plan</a>
+                                <a class="dropdown-item" href="./deposit.html">Deposit</a>
+                                <a class="dropdown-item" href="./withcheckout.html">Withdraw</a>
+                                <a class="dropdown-item" href="./pricing.html">Buy Plan</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../index.htmllogout" onclick="event.preventDefault();
                                     document.getElementById(&#39;logout-form&#39;).submit();">
@@ -163,36 +160,36 @@
 
 <div class="sidebar sidebar-style-2" data-background-color="dark">
     <div class="scroll-wrapper sidebar-wrapper scrollbar scrollbar-inner" style="position: relative;"><div class="sidebar-wrapper scrollbar scrollbar-inner scroll-content" style="height: 688.008px; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+        
         <div class="sidebar-content">
             <div class="user">
                 <div class="info">
-                    <a data-toggle="collapse" href="./dashboard.html/payment#collapseExample" aria-expanded="true">
-                        <span>
-                            testuser
+                    <a data-toggle="collapse" href="" aria-expanded="true">
+                        <span id="username">
+                            
                             
                             <span class="caret"></span>
                         </span>
                     </a>
-                    <div class="clearfix"></div>
-                    <div class="collapse in" id="collapseExample">
-                        <ul class="nav">
-                            <li>
-                                <a href="./settings.html">
-                                    <span class="link-collapse">Account Settings</span>
-                                </a>
-                            </li>
-                        </ul>
+                     <div class="clearfix"></div>
+                    <div class="nav nav-primary">
+                        
+                            
+                                <a href="./livetrade.html" class=" btn  btn-sm nav-item active">Status:<span id="stat2">On Standby</span><span class="blink_me"></span> </a>
+               
+                            
+                        
                     </div>
                 </div>
             </div>
             <ul class="nav nav-primary">
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a href="./dashboard.html">
                         <i class="fas fa-home"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li class="nav-item d-md-none  active">
+                <li class="nav-item d-md-none  ">
                     <a href="./deposit.html">
                         <i class="fa fa-download " aria-hidden="true"></i>
                         <p>Fund your Account</p>
@@ -205,36 +202,42 @@
                     </a>
                 </li>
 
-                
-                <li class="nav-item ">
-                    <a href="./transactions.html">
-                        <i class="fa fa-briefcase " aria-hidden="true"></i>
-                        <p>Deposits history</p>
+                <li class="nav-item dropdown bg-dark">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-briefcase" aria-hidden="true"></i>
+            
+                    Transactions
                     </a>
-                </li> <li class="nav-item ">
-                    <a href="./withhistory.html">
-                        <i class="fa fa-briefcase " aria-hidden="true"></i>
-                        <p>Withdrawal history</p>
-                    </a>
-                </li>
-               
-                                  
-                                                
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item bg-dark" href="./transactions.html">Deposit history</a>
+                      <a class="dropdown-item bg-dark" href="./withhistory.html">Withdrawal history</a>
+                     
+                    </div>
+                  </li>                      
                     
                              <li  class="nav-item">
                                  <a href="./pricing.html">
-                        <i class="fa fa-arrow-alt-circle-up " aria-hidden="true"></i>
+                                    <i class="fa-sharp fa-solid fa-tag"></i>
                         <p>Subscribe to a Plan</p>
                     </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="./upgrade.html">
-                                     <i class="fa fa-arrow-alt-circle-up " aria-hidden="true"></i>
-                                    <p>My Investment</p>                                </a>
-                            </li>                            <li class="nav-item">
+
+                              <li class="nav-item dropdown bg-dark">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i>
+                        
+                                Account settings
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item bg-dark" href="./updatepassword.html">Password settings</a>
+                                  <a class="dropdown-item bg-dark" href="./withdrawalsetting.html">Withdrawal settings</a>
+                                  <a class="dropdown-item bg-dark" href="./settings.html">profile settings</a>
+                                
+                                </div>
+                              </li>
+                    
+                                                        <li class="nav-item">
                                 <a href="./livetrade.html">
                                      <i class="fa fa-eye " aria-hidden="true"></i>
-                                    <p>Watch Trade</p>                                </a>
+                                    <p>Watch Live Trade</p>                                </a>
                             </li>
 
                        
@@ -245,6 +248,10 @@
                         <p>Help/Support</p>
                     </a>
                 </li>
+                
+
+                     
+                  
             </ul>
         </div>
     </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar ui-draggable ui-draggable-handle" style="height: 0px;"></div></div></div></div>
